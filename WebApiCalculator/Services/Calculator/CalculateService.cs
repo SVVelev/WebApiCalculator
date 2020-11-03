@@ -69,6 +69,8 @@ namespace WebApiCalculator.Services.Calculator
 
             Stack<char> stack = new Stack<char>();
 
+            char[] mathOperators = new char[] { '+', '-', '*', '/', '^' };
+
             if (!ParenthesesCountCorrect(infixExpression))
             {
                 throw new InvalidOperationException("Invalid expression! You missed closing the bracket!");
@@ -83,8 +85,15 @@ namespace WebApiCalculator.Services.Calculator
                     continue;
                 }
 
-                if (char.IsDigit(currentSymbol))
+                if (currentSymbol == '.' || currentSymbol == ',')
                 {
+                    throw new InvalidOperationException("Double numbers are not alowed!");
+                }
+
+                bool success = int.TryParse(currentSymbol.ToString(), out var number);
+
+                if (char.IsDigit(currentSymbol))
+                { 
                     result.Append(currentSymbol);
                 }
                 else if (currentSymbol == '(')
@@ -99,6 +108,10 @@ namespace WebApiCalculator.Services.Calculator
                     }
 
                     stack.Pop();
+                }
+                else if (!success && !mathOperators.Contains(currentSymbol))
+                {
+                    throw new InvalidOperationException("Only numbers are alowed!");
                 }
                 else
                 {
@@ -154,7 +167,7 @@ namespace WebApiCalculator.Services.Calculator
             return openBracketCount == closeBracketCount;
         }
 
-        private double PerformingAction(double firstOperand, double secondOperand, double mathOperator)
+        private double PerformingAction(double firstOperand, double secondOperand, char mathOperator)
         {
             switch (mathOperator)
             {

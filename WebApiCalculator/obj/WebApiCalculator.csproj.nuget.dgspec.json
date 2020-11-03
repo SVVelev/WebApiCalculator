@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sveto\\Desktop\\SoftUni\\WebApiCalculator\\WebApiCalculator\\WebApiCalculator\\WebApiCalculator.csproj": {}
+    "C:\\Users\\sveto\\Desktop\\SoftUni\\WebApiCalculator\\WebApiCalculator\\WebApiCalculator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sveto\\Desktop\\SoftUni\\WebApiCalculator\\WebApiCalculator\\WebApiCalculator\\WebApiCalculator.csproj": {
+    "C:\\Users\\sveto\\Desktop\\SoftUni\\WebApiCalculator\\WebApiCalculator\\WebApiCalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sveto\\Desktop\\SoftUni\\WebApiCalculator\\WebApiCalculator\\WebApiCalculator\\WebApiCalculator.csproj",
+        "projectUniqueName": "C:\\Users\\sveto\\Desktop\\SoftUni\\WebApiCalculator\\WebApiCalculator\\WebApiCalculator.csproj",
         "projectName": "WebApiCalculator",
-        "projectPath": "C:\\Users\\sveto\\Desktop\\SoftUni\\WebApiCalculator\\WebApiCalculator\\WebApiCalculator\\WebApiCalculator.csproj",
+        "projectPath": "C:\\Users\\sveto\\Desktop\\SoftUni\\WebApiCalculator\\WebApiCalculator\\WebApiCalculator.csproj",
         "packagesPath": "C:\\Users\\sveto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sveto\\Desktop\\SoftUni\\WebApiCalculator\\WebApiCalculator\\WebApiCalculator\\obj\\",
+        "outputPath": "C:\\Users\\sveto\\Desktop\\SoftUni\\WebApiCalculator\\WebApiCalculator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
